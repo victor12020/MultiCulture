@@ -1,0 +1,17 @@
+const router = require("express").Router();
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+
+const user = require("../models/user")
+
+//registrando usuario
+router.post("/register", async(req,res)=>{
+    const name = req.body.name;
+    const email = req.body.email;
+    const password = req.body.password;
+    const confirmpassword = req.body.confirmpassword;
+
+    if(name == null || email == null || password == null || confirmpassword == null){
+        return res.status(400).json({error:"por favor, preencha os campos"})
+    }
+})

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+          <li id="link0" class="link"><a href="index.html">Início</a></li>
+          <li id="link1" class="link"><a href="#">contato</a></li>
+          <li id="link2" class="link"><a href="#">Nossos trabalhos</a></li>
+          <li id="link3" class="link"><a href="#">postar</a></li>
+        </ul>
+        <p id="link3" class="link"><a href="login.html">login</a></p>
+    </nav>
+    <main class="container body-logo">
+        <h1>Cadastro de Usuário</h1>
+        <form id="cadastroForm">
+            <span class="blur"></span>
+            <div class="row">
+                <div class="form-group col">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+                <div class="form-group col">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="celular">Número de telefone:</label>
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">+99</span>
+                    <input type="tel" class="form-control" id="celular" name="celular" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" class="form-control" id="endereco" name="endereco">
+            </div>
+            <div class="form-group">
+                <label for="complemento">Complemento:</label>
+                <input type="text" class="form-control" id="complemento" name="complemento" placeholder="se você não tiver complemento não coloque nada">
+            </div>
+            <div class="form-group">
+                <label for="numero">Número de contanto:</label>
+                <input type="text" class="form-control" id="numero" name="numero">
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro:</label>
+                <input type="text" class="form-control" id="bairro" name="bairro">
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" class="form-control form-control-sm" id="cidade" name="cidade">
+                </div>
+                <div class="form-group col-sm-2">
+                    <label for="uf">UF:</label>
+                    <select class="form-control" id="uf" name="uf">
+                        <option>nenhum</option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AM</option>
+                        <option>AP</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MG</option>
+                        <option>MS</option>
+                        <option>MT</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>PR</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>RS</option>
+                        <option>SC</option>
+                        <option>SE</option>
+                        <option>SP</option>
+                        <option>TO</option>
+                    </select>
+                </div>
+                <div class="form-group col">
+                    <label for="cep">CEP:</label>
+                    <input type="text" class="form-control form-control-sm" id="cep" name="cep">
+                </div>
+            </div>
+            <div class="d-flex column">
+                <a href="login.html" class="form-group">Clique aqui para fazer login</a>
+                <button type="submit" style="width: min-content;" class="btn">Cadastrar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

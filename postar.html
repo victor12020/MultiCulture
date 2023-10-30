@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <title>postar</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+              <li id="link0" class="link"><a href="index.html">Início</a></li>
+              <li id="link1" class="link"><a href="#">contato</a></li>
+              <li id="link2" class="link"><a href="#">Nossos trabalhos</a></li>
+              <li id="link3" class="link"><a href="#">postar</a></li>
+            </ul>
+            <p id="link3" class="link"><a href="login.html">login</a></p>
+          </nav>
+    </header>
+    <main class="container body-logo" style="height: 100vh;">
+        <section class="container-sm border border-white p-5 rounded" style="width: 70vw;">
+            <h2>postar arquivo:</h2>
+            <form action="/postar" method="post" class="form-group">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="email" class="form-control" id="nome" name="nome" required>
+                </div>
+                <div class="form-group pb-lg-5">
+                    <label for="genero">Genero:</label>
+                    <input type="text" class="form-control" id="genero" name="genero" required>
+                </div>
+                <div class="form-group d-flex column">
+                    <label for="sinopse">sinopse:</label>
+                    <textarea id="sinopse" name="sinopse" rows="4" cols="50"></textarea>
+                </div>
+                <div class="form-group col-2 p-0">
+                    <label for="rating">rating:</label>
+                    <select class="form-control" id="rating" name="rating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">postar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,14 +1,13 @@
-const moongoose = require("moongoose");
+const mongoose = require("mongoose");
 
-const bookSchema = new moongoose.Schema({
+const bookSchema = new mongoose.Schema({
   nome: String,
   genero: String,
   sinopse: String,
   rating: String,
-  file : File,
-  dataUpload : Date 
+  texto: String
 });
 
-const User = moongoose.model("Livros", bookSchema);
+const User = mongoose.model("Livros", bookSchema);
 
-module.exports = Book;
+module.exports = User;

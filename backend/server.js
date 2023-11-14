@@ -5,8 +5,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 //routes
-const authRouter = require("./routes/authRoute");
-
+const authRouter = require("./routes/authRoutes");
 //middlewares - travas do meio de projeto e acesso
 //config
 
@@ -34,6 +33,10 @@ app.get("/", (req, res)=> {
 res.json({message : "Rota de teste será trocada!!!"});
 });
 
+app.get("/register", (req, res)=> {
+  //primeira rota de teste
+  res.json({message : "Rota de teste2 será trocada!!!"});
+  });
 //escutando a porta
 app.listen(port, ()=>{
 console.log(`O backend está rodando na porta ${port}`)

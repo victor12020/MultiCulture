@@ -409,3 +409,14 @@ footer .column > a:hover{
         grid-template-columns: 1fr 150px;
     }
 }
+
+#nossotrabalho{
+    background-color: #ffffff;
+  }
+  #frase{
+    width: 31vw;
+  }
+  #frase0{
+    width: 44vw;
+    background-color: #ccc;
+  }

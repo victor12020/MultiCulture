@@ -1,19 +1,18 @@
-const moongoose = require("moongoose");
+const mongoose = require("mongoose");
 
-const userSchema = new moongoose.Schema({
+const UsuarioSchema = new mongoose.Schema({
   name: String,
   email: String,
   password: String,
-  Telefone : String,
+  telefone : String,
   endereco: String,
   complemento : String,
-  numeroDeContato : String,
   bairro : String,
   cidade : String,
   uf : String,
   cep : String
 });
 
-const User = moongoose.model("Usuario", userSchema);
+const user = mongoose.model("Usuario", UsuarioSchema);
 
-module.exports = User;
+module.exports = user;

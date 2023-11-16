@@ -4,7 +4,7 @@ const UsuarioSchema = new mongoose.Schema({
   name: String,
   email: String,
   password: String,
-  Telefone : String,
+  telefone : String,
   endereco: String,
   complemento : String,
   bairro : String,
@@ -13,6 +13,6 @@ const UsuarioSchema = new mongoose.Schema({
   cep : String
 });
 
-const User = mongoose.model("Usuario", UsuarioSchema);
+const user = mongoose.model("Usuario", UsuarioSchema);
 
-module.exports = User;
+module.exports = user;

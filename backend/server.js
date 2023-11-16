@@ -3,9 +3,11 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const path = require("path")
 
 //routes
 const authRouter = require("./routes/authRoutes");
+const bookRouter = require("./routes/bookRoutes");
 //middlewares - travas do meio de projeto e acesso
 //config
 
@@ -30,12 +32,23 @@ serverSelectionTimeoutMS : 10000
 
 app.get("/", (req, res)=> {
 //primeira rota de teste
-res.json({message : "Rota de teste será trocada!!!"});
+res.sendFile(path.join(__dirname,"../index.html"))
 });
 
-app.get("/register", (req, res)=> {
+app.get("/api/auth/postar", (req, res)=> {
   //primeira rota de teste
-  res.json({message : "Rota de teste2 será trocada!!!"});
+  res.sendFile(path.join(__dirname,"../postar.html"))
+  });
+
+  app.get("/api/auth/login", (req, res)=> {
+    //primeira rota de teste
+    res.sendFile(path.join(__dirname,"../login.html"))
+    });
+  
+
+app.get("/api/auth/register", (req, res)=> {
+  //primeira rota de teste
+  res.sendFile(path.join(__dirname,"../cadastro.html"))
   });
 //escutando a porta
 app.listen(port, ()=>{

@@ -411,14 +411,18 @@ footer .column > a:hover{
 }
 
   #nossotrabalho{
+    width: 44vw;
     background-color: #ffffff;
+    position: absolute;
+    top: 421px;
+    left: 72px;
   }
   #frase{
     width: 31vw;
   }
   #frase0{
     width: 44vw;
-    background-color: #ccc;
+    background-color: #ffffff;
   }
   #frase1{
     width: 46vw;
@@ -428,33 +432,46 @@ footer .column > a:hover{
   }
   #frase2{
   width: 46vw;
-  background-color: #ccc;
+  background-color: #ffffff;
   }
-
   #frase3{
   width: 46vw;
-  background-color: #ccc;
+  background-color: #ffffff;
   }
+  #frase4{
+    width: 44vw;
+    background-color: #ffffff;
+    position: absolute;
+    top: 627px;
+    left: 72px;
+    }
+   #frase5{
+    width: 60vw;
+    position: absolute;
+    top: 1299px;
+    left: 220px;
+    }
   #contato{
     background-color: #ffffff;
   }
   #texto{
   position: absolute;
-  top: 1010px;
+  top: 1220px;
   left: 45px;
-  }
-  #texto1{
-  width: 60vw;
-  position: absolute;
-  top: 1100px;
-  left: 220px;
   }
   #imagem{
   width: 70vw;
   height: 600px;
   position: absolute;
-  top: 1250px;
+  top: 1470px;
   left: 150px;
+  }
+  #imagem1{
+  width: 44vw;
+  height: 400px;
+  position: absolute;
+  top: 795px;
+  left: 72px;
   }
   #logo{
   width: 18vw;

@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const jwt = require("jsonwebtoken");
+const bcrypt = require("bcrypt")
 const user = require("../models/user");
 
 router.post("/register", async (req, res) => {
@@ -38,6 +39,22 @@ router.post("/register", async (req, res) => {
     return res.status(400).json({
       error: "O e-mail informado já existe.",
     });
+  }
+  else if(9 == Telefone.lenght){
+      return res.status(400).json({
+          error: "por favor, este telefone esta errado"
+      })
+  }
+
+  else if(2 == cep.lenght){
+      return res.status(400).json({
+          error: "por favor, este cep esta errado"
+      })
+  }
+  else if(9 == cep.lenght){
+      return res.status(400).json({
+          error: "por favor, este UF esta errado"
+      })
   }
 
   const salt = await bcrypt.genSalt(12);
@@ -79,5 +96,30 @@ router.post("/register", async (req, res) => {
     });
   }
 });
+
+//criando a rota de login
+router.post("/login", async(req, res)=>{
+  const email = req.body.email;
+  const password = req.body.password;
+  //e se usuário ja existe?
+  const User = await user.findOne({email : email});
+  if(!User){
+  return res.status(400).json({error : "E-mail não cadastrado, usuário não existe!!!"})
+  }
+  //testando se a senha informada foi correta
+  const checkPassword = await bcrypt.compare(password, User.password);
+  if (!checkPassword){
+  return res.status(400).json({error: 'Senha inválida'});
+  }
+  //usuário ok vamos criar o token
+  const token = jwt.sign({
+  name : User.name,
+  id : User._id
+  },
+  "segredo"
+  );
+  //retornando o token e mensagem de autorização
+  res.json({error : null, msg : "Você esta logado!!!", token: token, userId: user._id})
+  });
 
 module.exports = router;

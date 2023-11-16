@@ -118,7 +118,7 @@ nav {
     color: #000000;
 }
 
-header{
+main{
     position: relative;
     padding-top: 2rem;
     display: grid;
@@ -127,14 +127,14 @@ header{
     gap: 2rem;
 }
 
-header .content h4{
+main .content h4{
     margin-bottom: 1rem;
     color: #ccc;
     font-size: 1rem;
     font-weight: 600;
 }
 
-header .content h1{
+main .content h1{
     color: #fff;
     margin-bottom: 1rem;
     font-size: 3rem;
@@ -142,21 +142,21 @@ header .content h1{
     line-height: 4rem;
 }
 
-header .content h1 span{
+main .content h1 span{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #fff;
 }
 
-header .content p{
+main .content p{
     margin-bottom: 2rem;
     color: #ccc;
 }
 
-header .image{
+main .image{
     position: relative;
 }
 
-header .image::before{
+main .image::before{
     content: "🌏";
     position: absolute;
     top: 0;
@@ -170,12 +170,12 @@ header .image::before{
     z-index: -100;
 }
 
-header .image img{
+main .image img{
     max-width: 600px;
     margin: auto;
 }
 
-section .header{
+section .main{
     margin-bottom: 1rem;
     color: #fff;
     text-align: center;
@@ -307,10 +307,7 @@ section .header{
 }
 
 footer{
-    position: relative;
-    display: grid;
-    grid-template-columns: 400px repeat(3, 1fr);
-    gap: 2rem;
+    background-color: #2E2E2E;
 }
 
 footer .column .logo{
@@ -320,7 +317,6 @@ footer .column .logo{
 
 footer .column p{
     color: #ccc;
-    margin-bottom: 2rem;
 }
 
 footer .column .socials{

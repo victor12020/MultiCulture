@@ -5,7 +5,6 @@ const bookSchema = new mongoose.Schema({
   genero: String,
   sinopse: String,
   rating: Number,
-  dataUpload: Date
 });
 
 const User = mongoose.model("Livros", bookSchema);

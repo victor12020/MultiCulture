@@ -7,27 +7,30 @@ router.post("/livros", async (req, res) => {
   const genero = req.body.genero;
   const rating = req.body.rating;
   const sinopse = req.body.sinopse;
-  const dataUpload = req.body.dataUpload;
 
   const Book = new book({
     nome: nome,
     genero: genero,
     rating: rating,
-    sinops: sinopse,
-    dataUpload: dataUpload,
+    sinopse: sinopse,
   });
 
   if (
     nome == null ||
     genero == null ||
     rating == null ||
-    sinopse == null ||
-    dataUpload == null
+    sinopse == null
   ) {
     return res.status(400).json({
       error: "por favor, preencha os campos",
     });
   }
+
+    else if(rating != Number){
+      return res.status(400).json({
+        error: "por favor, o rating não esta em number"
+      });
+    }
   try {
     const livro = await Book.save();
     res.json({
@@ -37,3 +40,5 @@ router.post("/livros", async (req, res) => {
     });
   } catch (error) {}
 });
+
+module.exports = router;

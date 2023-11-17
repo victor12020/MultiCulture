@@ -20,6 +20,7 @@ app.use(express.static("public"));
 //atrelar as rotas ao express
 
 app.use("/api/auth", authRouter);
+app.use("/api/auth", bookRouter);
 //conexão mongodb
 
 mongoose.connect(`mongodb://127.0.0.1:27017/${dbName}`, {

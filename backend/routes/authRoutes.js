@@ -26,11 +26,27 @@ router.post("/register", async (req, res) => {
     cidade == null ||
     uf == null ||
     cep == null
-  ) {
-    return res.status(400).json({
-      error: "por favor, preencha os campos",
+    ) {
+      return res.status(400).json({
+        error: "por favor, preencha os campos",
+      });
+    }
+
+    const salt = await bcrypt.genSalt(12);
+    const passwordHash = await bcrypt.hash(password, salt);
+
+    const User = new user({
+      name: name,
+      email: email,
+      password: passwordHash,
+      telefone: telefone,
+      endereco: endereco,
+      complemento: complemento,
+      bairro: bairro,
+      cidade: cidade,
+      uf: uf,
+      cep: cep,
     });
-  }
 
   const emailExists = await user.findOne({
     email: email,
@@ -40,7 +56,7 @@ router.post("/register", async (req, res) => {
       error: "O e-mail informado já existe.",
     });
   }
-  else if(9 == Telefone.lenght){
+  else if(9 == telefone.lenght){
       return res.status(400).json({
           error: "por favor, este telefone esta errado"
       })
@@ -57,24 +73,8 @@ router.post("/register", async (req, res) => {
       })
   }
 
-  const salt = await bcrypt.genSalt(12);
-  const passwordHash = await bcrypt.hash(password, salt);
-
-  const user = new user({
-    name: name,
-    email: email,
-    password: passwordHash,
-    telefone: telefone,
-    endereco: endereco,
-    complemento: complemento,
-    bairro: bairro,
-    cidade: cidade,
-    uf: uf,
-    cep: cep,
-  });
-
   try {
-    const newUser = await user.save();
+    const newUser = await User.save();
 
     const token = jwt.sign(
       {

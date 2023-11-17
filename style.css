@@ -415,25 +415,25 @@ footer .column > a:hover{
     left: 400px;
   }
    #frase2{
-    width: 40vw;
+    width: 70vw;
     position: absolute;
-    top: 695px;
-    left: 645px;
+    top: 1990px;
+    left: 188px;
     }
   #contato{
     background-color: #ffffff;
   }
   #texto{
   position: absolute;
-  top: 620px;
-  left: 645px;
+  top: 1900px;
+  left: 25px;
   }
   #imagem{
-  width: 45vw;
-  height: 400px;
+  width: 85vw;
+  height: 585px;
   position: absolute;
-  top: 930px;
-  left: 620px;
+  top: 2148px;
+  left: 47px;
   }
   #logo{
   width: 18vw;
@@ -443,7 +443,7 @@ footer .column > a:hover{
   left: -55px;
   }
   #background{
-  width: 110vw;
+  width: 100vw;
   height: 1200px;
   position: absolute;
   top: 610px;

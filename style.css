@@ -405,20 +405,8 @@ footer .column > a:hover{
         grid-template-columns: 1fr 150px;
     }
 }
-
-  #nossotrabalho{
-    width: 44vw;
-    background-color: #ffffff;
-    position: absolute;
-    top: 421px;
-    left: 72px;
-  }
   #frase{
     width: 31vw;
-  }
-  #frase0{
-    width: 44vw;
-    background-color: #ffffff;
   }
   #frase1{
     width: 46vw;
@@ -426,48 +414,26 @@ footer .column > a:hover{
     top: 1000px;
     left: 400px;
   }
-  #frase2{
-  width: 46vw;
-  background-color: #ffffff;
-  }
-  #frase3{
-  width: 46vw;
-  background-color: #ffffff;
-  }
-  #frase4{
-    width: 44vw;
-    background-color: #ffffff;
+   #frase2{
+    width: 40vw;
     position: absolute;
-    top: 627px;
-    left: 72px;
-    }
-   #frase5{
-    width: 60vw;
-    position: absolute;
-    top: 1299px;
-    left: 220px;
+    top: 695px;
+    left: 645px;
     }
   #contato{
     background-color: #ffffff;
   }
   #texto{
   position: absolute;
-  top: 1220px;
-  left: 45px;
+  top: 620px;
+  left: 645px;
   }
   #imagem{
-  width: 70vw;
-  height: 600px;
-  position: absolute;
-  top: 1470px;
-  left: 150px;
-  }
-  #imagem1{
-  width: 44vw;
+  width: 45vw;
   height: 400px;
   position: absolute;
-  top: 795px;
-  left: 72px;
+  top: 930px;
+  left: 620px;
   }
   #logo{
   width: 18vw;
@@ -475,4 +441,11 @@ footer .column > a:hover{
   position: absolute;
   top: 10px;
   left: -55px;
+  }
+  #background{
+  width: 110vw;
+  height: 1200px;
+  position: absolute;
+  top: 610px;
+  left: -52px;
   }

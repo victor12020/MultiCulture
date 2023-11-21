@@ -159,8 +159,8 @@ main .image{
 main .image::before{
     content: "🌏";
     position: absolute;
-    top: 0;
-    left: 50%;
+    top: -10vw;
+    left: 15.1vw;
     transform: translateX(-50%);
     font-size: 38rem;
     font-weight: 400;
@@ -432,53 +432,67 @@ footer .column > a:hover{
   top: 2148px;
   left: 47px;
   }
+  #imagem0{
+  width: 35vw;
+  height: 250px;
+  position: absolute;
+  top: -135px;
+  left: -25px;
+  }
   #logo{
   width: 18vw;
   height: 85px;
   position: absolute;
-  top: 10px;
-  left: -55px;
+  top: 5px;
+  left: 970px;
   }
   #background{
-  width: 98.9vw;
+  width: 97.5vw;
   height: 1200px;
   position: absolute;
   top: 610px;
-  left: -52px;
+  left: 10px;
   }
   #background1{
-  width: 98.9vw;
-  height: 1200px;
+  width: 102.6vw;
+  height: 377.5px;
   position: absolute;
-  top: 610px;
+  top: 1050px;
   left: -52px;
   }
   #background2{
-  width: 90vw;
-  height: 373px;
+  width: 102.6vw;
+  height: 377.5px;
   position: absolute;
   top: 2850px;
   left: -52px;
   }
   #background3{
-  width: 98.9vw;
-  height: 377px;
+  width: 102.9vw;
+  height: 377.5px;
   position: absolute;
-  top: 1050px;
+  top: 885px;
   left: -52px;
   }
   #background4{
-  width: 98.9vw;
-  height: 377.8px;
+  width: 102.9vw;
+  height: 377.5px;
   position: absolute;
-  top: 750px;
+  top: 1350px;
   left: -52px;
   }
   #background5{
-  width: 99.1vw;
-  height: 377.8px;
+  width: 102.6vw;
+  height: 377.5px;
   position: absolute;
   top: 850px;
+  left: -52px;
+  }
+  #background6{
+  width: 102.6vw;
+  height: 377.5px;
+  position: absolute;
+  top: -50px;
   left: -52px;
   }
   #siganos{

@@ -440,14 +440,21 @@ footer .column > a:hover{
   left: -55px;
   }
   #background{
-  width: 105vw;
+  width: 98.9vw;
+  height: 1200px;
+  position: absolute;
+  top: 610px;
+  left: -52px;
+  }
+  #background1{
+  width: 98.9vw;
   height: 1200px;
   position: absolute;
   top: 610px;
   left: -52px;
   }
   #background2{
-  width: 105vw;
+  width: 90vw;
   height: 373px;
   position: absolute;
   top: 2850px;
@@ -458,6 +465,20 @@ footer .column > a:hover{
   height: 377px;
   position: absolute;
   top: 1050px;
+  left: -52px;
+  }
+  #background4{
+  width: 98.9vw;
+  height: 377.8px;
+  position: absolute;
+  top: 750px;
+  left: -52px;
+  }
+  #background5{
+  width: 99.1vw;
+  height: 377.8px;
+  position: absolute;
+  top: 850px;
   left: -52px;
   }
   #siganos{

@@ -420,9 +420,6 @@ footer .column > a:hover{
     top: 1990px;
     left: 188px;
     }
-  #contato{
-    background-color: #ffffff;
-  }
   #texto{
   position: absolute;
   top: 1900px;
@@ -443,9 +440,149 @@ footer .column > a:hover{
   left: -55px;
   }
   #background{
-  width: 100vw;
+  width: 105vw;
   height: 1200px;
   position: absolute;
   top: 610px;
   left: -52px;
+  }
+  #background2{
+  width: 105vw;
+  height: 373px;
+  position: absolute;
+  top: 2850px;
+  left: -52px;
+  }
+  #background3{
+  width: 98.9vw;
+  height: 377px;
+  position: absolute;
+  top: 1050px;
+  left: -52px;
+  }
+  #siganos{
+  width: 10vw;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  left: 452px;
+  }
+  #siganos2{
+  width: 10vw;
+  height: 10px;
+  position: absolute;
+  top: 1400px;
+  left: 507px;
+  }
+  #siganos3{
+  width: 10vw;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  left: 452px;
+    }
+  #Github{
+  width: 10vw;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  left: 142px;
+  }
+  #Whatsap{
+  width: 10vw;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  left: 242px;
+  }
+  #Facebook{
+  width: 10vw;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  left: 352px;
+  }
+  #Twinter{
+  width: 10vw;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  left: 452px;
+  }
+  #Discord{
+  width: 10vw;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  left: 552px;
+  }
+  #Github2{
+  width: 18vw;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  left: 452px;
+  }
+  #Whatsap2{
+  width: 18vw;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  left: 452px;
+  }
+  #Facebook2{
+  width: 18vw;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  left: 452px;
+  }
+  #Twinter2{
+  width: 18vw;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  left: 452px;
+  }
+  #Discord2{
+  width: 18vw;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  left: 452px;
+  }
+  #Github3{
+  width: 18vw;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  left: 452px;
+  }
+  #Whatsap3{
+  width: 18vw;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  left: 452px;
+  }
+  #Facebook3{
+  width: 18vw;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  left: 452px;
+  }
+  #Twinter3{
+  width: 18vw;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  left: 452px;
+  }
+  #Discord3{
+  width: 18vw;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  left: 452px;
   }

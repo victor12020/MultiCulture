@@ -119,7 +119,6 @@ nav {
 }
 
 main{
-    position: relative;
     padding-top: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -308,6 +307,14 @@ section .main{
 
 footer{
     background-color: #2E2E2E;
+}
+footer p{
+    gap: 0px;
+    margin: 0px;
+}
+
+footer ul{
+    list-style-type: none;
 }
 
 footer .column .logo{

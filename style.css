@@ -520,36 +520,36 @@ footer .column > a:hover{
   width: 10vw;
   height: 100px;
   position: absolute;
-  top: 10px;
+  top: 50px;
   left: 142px;
   }
-  #Whatsap{
+  #Whatsapp{
   width: 10vw;
-  height: 100px;
+  height: 75px;
   position: absolute;
-  top: 10px;
-  left: 242px;
+  top: 65px;
+  left: 300px;
   }
   #Facebook{
-  width: 10vw;
+  width: 8vw;
   height: 100px;
   position: absolute;
-  top: 10px;
-  left: 352px;
+  top: 50px;
+  left: 452px;
   }
   #Twinter{
-  width: 10vw;
-  height: 100px;
+  width: 15vw;
+  height: 150px;
   position: absolute;
-  top: 10px;
-  left: 452px;
+  top: 30px;
+  left: 571px;
   }
   #Discord{
   width: 10vw;
   height: 100px;
   position: absolute;
-  top: 10px;
-  left: 552px;
+  top: 55px;
+  left: 738px;
   }
   #Github2{
   width: 18vw;
